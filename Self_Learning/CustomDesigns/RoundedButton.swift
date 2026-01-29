@@ -8,14 +8,18 @@
 import Foundation
 import UIKit
 
+@IBDesignable
 class RoundedButton:UIButton{
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        setupDesign()
-        
+   
+    @IBInspectable var cornerRaduis:CGFloat = 0{
+    
+        didSet{
+            self.layer.cornerRadius = cornerRaduis
+            
+        }
     }
-    func setupDesign(){
-        self.layer.cornerRadius = 10
-        self.layer.masksToBounds = true
-    }
+    override func layoutSubviews() {
+            super.layoutSubviews()
+            self.layer.masksToBounds = true
+        }
 }
