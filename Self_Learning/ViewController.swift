@@ -8,25 +8,37 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
-    @IBOutlet weak var EmailContainerView: UIView!
-    @IBOutlet weak var NameContainerView: UIView!
+    
+    
     @IBOutlet weak var ImageView: UIImageView!
-    @IBOutlet weak var saveButton: UIButton!
-    @IBOutlet weak var EmailTextField: UITextField!
-    @IBOutlet weak var NameTextField: UITextField!
+    @IBOutlet weak var nameContanierView: UIView!
+    @IBOutlet weak var FirdtNmaeContainerView: UIView!
+    @IBOutlet weak var FamilyContainerView: UIView!
     
+    
+    @IBOutlet weak var PhoneContainerView: UIView!
+    @IBOutlet weak var CityContainerView: UIView!
+    @IBOutlet weak var CountryContainerView: UIView!
+    @IBOutlet weak var BankAccountContainerView: UIView!
+    
+    
+    @IBOutlet weak var saveButton: UIButton!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+      super.viewDidLoad()
         
-       
         
-        viewStyle(NameContainerView)
-        viewStyle(EmailContainerView)
+        
+        viewStyle(nameContanierView)
+        viewStyle(FirdtNmaeContainerView)
+        viewStyle(FamilyContainerView)
+        viewStyle(PhoneContainerView)
+        viewStyle(PhoneContainerView)
+        viewStyle(CityContainerView)
+        viewStyle(CountryContainerView)
+        viewStyle(BankAccountContainerView)
         viewStyle(saveButton)
-        
         
         ImageView.layer.cornerRadius=ImageView.frame.width/2
         ImageView.clipsToBounds=true
@@ -34,31 +46,29 @@ class ViewController: UIViewController {
         ImageView.layer.borderColor=UIColor.gray.cgColor
         
         
+    
         let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
-        view.addGestureRecognizer(tap)
+         view.addGestureRecognizer(tap)
         
-       
-        }
-    @IBAction func SaveButton(_ sender: Any) {
-        
-        view.endEditing(true)
-        
-        print("userName \(NameTextField.text!)")
-        print("userEmail\(EmailTextField.text!)")
-        
-        NameTextField.text=""
-        EmailTextField.text=""
         
     }
+    
+        @IBAction func saveButton(_ sender: Any) {
+        
+          view.endEditing(true)
+    
+    
+     }
     
     
     @objc func hideKeyboard() {
-        view.endEditing(true)
+     view.endEditing(true)
+     }
     }
-}
-
-func viewStyle(_ view: UIView){
-    view.layer.cornerRadius=10
+    
+    func viewStyle(_ view: UIView){
+      view.layer.cornerRadius=10
     view.layer.masksToBounds=true
-}
+    }
+    
 
