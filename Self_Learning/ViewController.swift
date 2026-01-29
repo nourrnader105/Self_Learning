@@ -8,25 +8,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     @IBOutlet weak var ImageView: UIImageView!
-    
-    
+    @IBOutlet weak var customInputView: CustomInputView!
+
+
     override func viewDidLoad() {
-      super.viewDidLoad()
-        
+        super.viewDidLoad()
+
         let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
-         view.addGestureRecognizer(tap)
+        view.addGestureRecognizer(tap)
     }
-    
-        @IBAction func saveButton(_ sender: Any) {
-          view.endEditing(true)
-     }
-    
+
+    @IBAction func saveButton(_ sender: Any) {
+        view.endEditing(true)
+        print(customInputView.text)
+    }
+
     @objc func hideKeyboard() {
-     view.endEditing(true)
-     }
+        view.endEditing(true)
     }
-    
-   
+}
+
+
 
