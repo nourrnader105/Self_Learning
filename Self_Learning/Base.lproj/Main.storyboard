@@ -43,7 +43,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aCT-jZ-dtO">
                                         <rect key="frame" x="20" y="220.00000000000006" width="353" height="612.33333333333348"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hHB-Xe-Mow">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hHB-Xe-Mow" customClass="CustomInputView" customModule="Self_Learning" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="72.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاسم بالكامل(اجباري)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeP-yE-gAe">
@@ -88,8 +88,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="ادخل اسمك هنا"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="الاسم كامل(اجباري)"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="textField" destination="oXR-vp-8U0" id="NG3-aj-3Gg"/>
+                                                    <outlet property="titleLabel" destination="OeP-yE-gAe" id="4M1-kl-wnJ"/>
+                                                </connections>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IIc-fc-WdB">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IIc-fc-WdB" customClass="CustomInputView" customModule="Self_Learning">
                                                 <rect key="frame" x="0.0" y="80.333333333333314" width="353" height="72.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاسم الاول(اختياري)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0D-JS-fkE">
@@ -134,8 +142,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="الاسم الاول(اختياري)"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="ادخل الاسم الاول هنا"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="textField" destination="zG5-E1-GuB" id="cWj-pT-ixX"/>
+                                                    <outlet property="titleLabel" destination="R0D-JS-fkE" id="KFK-hb-efu"/>
+                                                </connections>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XdK-3r-7cu">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XdK-3r-7cu" customClass="CustomInputView" customModule="Self_Learning">
                                                 <rect key="frame" x="0.0" y="160.66666666666669" width="353" height="72.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم العيله(اختياري)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPJ-jJ-ZyM">
@@ -180,8 +196,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="اسم العائله(اختياري)"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="ادخل اسم العائله هنا"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="textField" destination="A40-gi-CGd" id="pSx-Nq-piQ"/>
+                                                    <outlet property="titleLabel" destination="lPJ-jJ-ZyM" id="3JQ-J0-5Yv"/>
+                                                </connections>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ekp-fu-46y">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ekp-fu-46y" customClass="CustomInputView" customModule="Self_Learning">
                                                 <rect key="frame" x="0.0" y="241.00000000000003" width="353" height="72.333333333333343"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاسم الهاتف(اختياري)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbY-la-MXR">
@@ -226,8 +250,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="رقم الهاتف(اختياري)"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="ادخل رقم الهاتف"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="textField" destination="7Me-4T-2Dy" id="4Ss-bu-R1N"/>
+                                                    <outlet property="titleLabel" destination="NbY-la-MXR" id="xya-Vk-GL5"/>
+                                                </connections>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qyf-Wx-bHQ">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qyf-Wx-bHQ" customClass="CustomInputView" customModule="Self_Learning">
                                                 <rect key="frame" x="0.0" y="321.33333333333337" width="353" height="72.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الدوله(اختياري)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7G-rj-8vT">
@@ -272,8 +304,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="الدوله(اختياري)"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="ادخل اسم الدوله "/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="textField" destination="kYW-Ot-q56" id="fuE-JU-kl6"/>
+                                                    <outlet property="titleLabel" destination="d7G-rj-8vT" id="gEd-oZ-rUS"/>
+                                                </connections>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M63-ft-I8X">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M63-ft-I8X" customClass="CustomInputView" customModule="Self_Learning">
                                                 <rect key="frame" x="0.0" y="401.66666666666663" width="353" height="72.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المدينه(اختياري)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6Z-j9-b3f">
@@ -318,8 +358,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="المدينه(اختياري)"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="ادخل اسم المدينه هنا"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="textField" destination="LJM-Fb-sMK" id="hn9-zv-Eda"/>
+                                                    <outlet property="titleLabel" destination="k6Z-j9-b3f" id="CgS-QZ-X3t"/>
+                                                </connections>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3Wa-hV-76Z">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3Wa-hV-76Z" customClass="CustomInputView" customModule="Self_Learning">
                                                 <rect key="frame" x="0.0" y="481.99999999999994" width="353" height="72.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الحساب البنكي(اختياري)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeM-IQ-Mav">
@@ -364,6 +412,14 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="الحساب البنكي"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="ادخل رقم الحساب البنكي"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="textField" destination="9NU-8Z-HUt" id="8FP-eO-hEc"/>
+                                                    <outlet property="titleLabel" destination="zeM-IQ-Mav" id="Tu6-Fc-8WX"/>
+                                                </connections>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQq-C7-DYK" customClass="RoundedButton" customModule="Self_Learning" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="562.33333333333337" width="353" height="50"/>
