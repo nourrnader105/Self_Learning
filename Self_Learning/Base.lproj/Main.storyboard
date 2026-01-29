@@ -23,7 +23,7 @@
                                         <rect key="frame" x="0.0" y="40" width="393" height="812.33333333333337"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6Sj-vt-azW">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6Sj-vt-azW" customClass="circularimageView" customModule="Self_Learning" customModuleProvider="target">
                                         <rect key="frame" x="136.66666666666666" y="80.666666666666657" width="119.99999999999997" height="118.66666666666669"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <color key="tintColor" systemColor="opaqueSeparatorColor"/>
@@ -52,7 +52,7 @@
                                                         <color key="textColor" red="0.15294116739999999" green="0.15686275059999999" blue="0.1686274707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1I-Qn-ATT">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1I-Qn-ATT" customClass="RoundedCardView" customModule="Self_Learning" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="22.333333333333343" width="353" height="50"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRb-vq-6t1">
@@ -81,6 +81,11 @@
                                                             <constraint firstAttribute="height" constant="50" id="n4N-uQ-x3g"/>
                                                             <constraint firstItem="eRb-vq-6t1" firstAttribute="leading" secondItem="g1I-Qn-ATT" secondAttribute="leading" constant="10" id="qqI-OR-W83"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -93,7 +98,7 @@
                                                         <color key="textColor" red="0.15294116739999999" green="0.15686275059999999" blue="0.1686274707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQM-pw-uE9">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQM-pw-uE9" customClass="RoundedCardView" customModule="Self_Learning" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="22.333333333333371" width="353" height="50"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phN-A0-dK8">
@@ -122,6 +127,11 @@
                                                             <constraint firstItem="phN-A0-dK8" firstAttribute="leading" secondItem="sQM-pw-uE9" secondAttribute="leading" constant="10" id="pdP-lG-CYD"/>
                                                             <constraint firstAttribute="height" constant="50" id="wsz-9g-u0i"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -134,7 +144,7 @@
                                                         <color key="textColor" red="0.15294116739999999" green="0.15686275059999999" blue="0.1686274707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlK-ld-pFx">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlK-ld-pFx" customClass="RoundedCardView" customModule="Self_Learning" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="22.333333333333314" width="353" height="50"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QrM-Ox-Scy">
@@ -163,6 +173,11 @@
                                                             <constraint firstItem="QrM-Ox-Scy" firstAttribute="leading" secondItem="mlK-ld-pFx" secondAttribute="leading" constant="10" id="j2a-h2-Lw7"/>
                                                             <constraint firstAttribute="trailing" secondItem="QrM-Ox-Scy" secondAttribute="trailing" constant="10" id="yuy-88-dOc"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -175,7 +190,7 @@
                                                         <color key="textColor" red="0.15294116739999999" green="0.15686275059999999" blue="0.1686274707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hds-Au-9sp">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hds-Au-9sp" customClass="RoundedCardView" customModule="Self_Learning" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="22.333333333333314" width="353" height="50"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOK-Vh-qec">
@@ -204,6 +219,11 @@
                                                             <constraint firstAttribute="bottom" secondItem="gOK-Vh-qec" secondAttribute="bottom" id="aSb-ds-C31"/>
                                                             <constraint firstAttribute="trailing" secondItem="gOK-Vh-qec" secondAttribute="trailing" constant="10" id="nCt-Wc-XYq"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -216,7 +236,7 @@
                                                         <color key="textColor" red="0.15294116739999999" green="0.15686275059999999" blue="0.1686274707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1D-lF-Cdv">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1D-lF-Cdv" customClass="RoundedCardView" customModule="Self_Learning" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="22.333333333333258" width="353" height="50"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="twg-gn-Kkf">
@@ -245,6 +265,11 @@
                                                             <constraint firstItem="twg-gn-Kkf" firstAttribute="top" secondItem="D1D-lF-Cdv" secondAttribute="top" id="hKh-Hm-lIa"/>
                                                             <constraint firstItem="twg-gn-Kkf" firstAttribute="leading" secondItem="D1D-lF-Cdv" secondAttribute="leading" constant="10" id="tjo-zk-EeG"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -257,7 +282,7 @@
                                                         <color key="textColor" red="0.15294116739999999" green="0.15686275059999999" blue="0.1686274707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZa-tL-N3e">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZa-tL-N3e" customClass="RoundedCardView" customModule="Self_Learning" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="22.333333333333371" width="353" height="50"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idb-zu-uUj">
@@ -286,6 +311,11 @@
                                                             <constraint firstItem="idb-zu-uUj" firstAttribute="leading" secondItem="RZa-tL-N3e" secondAttribute="leading" constant="10" id="m7Q-Bp-w7G"/>
                                                             <constraint firstItem="idb-zu-uUj" firstAttribute="top" secondItem="RZa-tL-N3e" secondAttribute="top" id="p2Q-jh-a5P"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -298,7 +328,7 @@
                                                         <color key="textColor" red="0.15294116739999999" green="0.15686275059999999" blue="0.1686274707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0O-LM-z8v">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0O-LM-z8v" customClass="RoundedCardView" customModule="Self_Learning" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="22.333333333333371" width="353" height="50"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9R2-gg-jW6">
@@ -327,10 +357,15 @@
                                                             <constraint firstAttribute="trailing" secondItem="9R2-gg-jW6" secondAttribute="trailing" constant="10" id="iyw-9K-v8L"/>
                                                             <constraint firstItem="9R2-gg-jW6" firstAttribute="top" secondItem="l0O-LM-z8v" secondAttribute="top" id="li3-HV-wN6"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQq-C7-DYK">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQq-C7-DYK" customClass="RoundedButton" customModule="Self_Learning" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="562.33333333333337" width="353" height="50"/>
                                                 <color key="backgroundColor" red="0.15294116739999999" green="0.15686275059999999" blue="0.1686274707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -375,15 +410,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="BankAccountContainerView" destination="l0O-LM-z8v" id="043-Xd-CnA"/>
-                        <outlet property="CityContainerView" destination="RZa-tL-N3e" id="UTg-op-n3w"/>
-                        <outlet property="CountryContainerView" destination="D1D-lF-Cdv" id="3wd-8a-i2u"/>
-                        <outlet property="FamilyContainerView" destination="mlK-ld-pFx" id="PkX-TY-3p6"/>
-                        <outlet property="FirdtNmaeContainerView" destination="sQM-pw-uE9" id="ldS-59-yb5"/>
                         <outlet property="ImageView" destination="6Sj-vt-azW" id="lAm-lv-K2Z"/>
-                        <outlet property="PhoneContainerView" destination="Hds-Au-9sp" id="rc4-nW-afp"/>
-                        <outlet property="nameContanierView" destination="g1I-Qn-ATT" id="f0R-nE-0Dw"/>
-                        <outlet property="saveButton" destination="xQq-C7-DYK" id="yg5-9m-1cC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
